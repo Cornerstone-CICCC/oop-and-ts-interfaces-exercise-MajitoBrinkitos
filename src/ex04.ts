@@ -3,16 +3,17 @@
 // Use an intersection type to combine these two interfaces and create a "Rectangle" object.
 
 interface Shape {
-
+  name: string;
 }
 
 interface Dimensions {
-
+  width: number;
+  height: number;
 }
 
-type Rectangle;
+type Rectangle = Shape & Dimensions;
 
-const myRectangle = {
+const myRectangle: Rectangle = {
   name: "Rectangle",
   width: 10,
   height: 5,
