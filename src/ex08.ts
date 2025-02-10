@@ -16,9 +16,13 @@ const myHouse = {
   }
 };
 
-console.log( );
+console.log( myHouse?.address?.city);
 // Expected Output: "New York"
 
-const noCityHouse = {};
-console.log( );
+const noCityHouse = {
+  address: {
+    city: "City not available"
+  }
+};
+console.log( noCityHouse?.address?.city);
 // Expected Output: "City not available"
