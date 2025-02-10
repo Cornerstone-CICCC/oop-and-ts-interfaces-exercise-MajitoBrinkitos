@@ -1,9 +1,9 @@
 // Exercise 3: Optional Parameters & Properties
 // Define an interface for a "Car" object with an optional "color" property and a required "model" (string).
 // Create a function that takes this object as a parameter and logs the model and color (if available).
-
 interface Car {
-
+  color: string;
+  model: string;
 }
 
 const describeCar = (car) => {
