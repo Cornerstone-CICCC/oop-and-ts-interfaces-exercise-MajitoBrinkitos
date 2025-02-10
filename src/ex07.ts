@@ -1,7 +1,7 @@
 // Exercise 7: Function Overloads
 // Define an interface for a function that can accept either a string or a number as a parameter.
 // Write a function using overloads that handles both types and logs a different message for each.
-enum MessageLog {
+enum MessageLog { //use of enum, optional
   Message = "Message",
   Code = "Code"
 }
